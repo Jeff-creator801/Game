@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TON Pay Game</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+    <script src="https://unpkg.com/@tonconnect/sdk@latest/dist/tonconnect-sdk.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h1>TON Pay Game</h1>
+        
+        <div class="wallet-section">
+            <button id="connectWalletBtn">Connect TON Wallet</button>
+            <p id="walletAddress">Not connected</p>
+        </div>
+
+        <div class="game">
+            <button id="clickBtn">Earn Coins</button>
+            <p>Coins: <span id="score">0</span></p>
+            <button id="cashOutBtn">Cash Out (1 TON)</button>
+        </div>
+
+        <div id="leaderboard">
+            <h2>Top Players</h2>
+            <ul id="scoresList"></ul>
+        </div>
+    </div>
+</body>
+  </html>
